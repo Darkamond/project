@@ -23,15 +23,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -65,5 +59,25 @@ class DefaultFirebaseOptions {
     messagingSenderId: '449566323481',
     projectId: 'vize030120010',
     storageBucket: 'vize030120010.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyDQBozQJ94Cs8xpy5z7vLaHQuPV3pYIA8w',
+    appId: '1:449566323481:ios:ba73082aafc6c863f68b88',
+    messagingSenderId: '449566323481',
+    projectId: 'vize030120010',
+    storageBucket: 'vize030120010.appspot.com',
+    iosClientId: '449566323481-bouvrd5qvk2fnrlv7n6njs3fuaqkvvpq.apps.googleusercontent.com',
+    iosBundleId: 'com.example.project',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDQBozQJ94Cs8xpy5z7vLaHQuPV3pYIA8w',
+    appId: '1:449566323481:ios:ba73082aafc6c863f68b88',
+    messagingSenderId: '449566323481',
+    projectId: 'vize030120010',
+    storageBucket: 'vize030120010.appspot.com',
+    iosClientId: '449566323481-bouvrd5qvk2fnrlv7n6njs3fuaqkvvpq.apps.googleusercontent.com',
+    iosBundleId: 'com.example.project',
   );
 }
